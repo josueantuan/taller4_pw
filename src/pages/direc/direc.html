@@ -1,0 +1,21 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>direc</ion-title>
+    <ion-buttons end>
+      <button ion-button  (click)="cerrar()">
+        Cerrar
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <agm-map [latitude]="lat" [longitude]="lng" [zoom]="15" (mapClick)="mapClicked($event)">
+    <agm-direction [origin]="origin" [destination]="destination">
+    </agm-direction>
+  </agm-map>
+</ion-content>

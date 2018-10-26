@@ -1,0 +1,24 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>marca</ion-title>
+    <ion-buttons end>
+      <button ion-button  (click)="cerrar()">
+        Cerrar
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <agm-map [latitude]="lat" [longitude]="lng" [zoom]="15">
+    <!--Marca-->
+    <agm-marker [latitude]="lat" [longitude]="lng">
+    </agm-marker>
+    <agm-circle [latitude]="lat"[longitude]="lng"[circleDraggable]="false" [editable]="false" [fillColor]="blue" [radius]="900">
+    </agm-circle>
+    
+  </agm-map>
+</ion-content>

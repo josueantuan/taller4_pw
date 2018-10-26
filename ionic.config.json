@@ -1,0 +1,7 @@
+{
+  "name": "taller4_App",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
